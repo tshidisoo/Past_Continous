@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Past Continuous Tense</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .slide-container {
+            width: 100%;
+            max-width: 1000px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+
+        .slide {
+            display: none;
+            padding: 60px;
+            min-height: 600px;
+            animation: fadeIn 0.5s;
+        }
+
+        .slide.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h1 {
+            color: #667eea;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #764ba2;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            color: #667eea;
+            font-size: 1.5em;
+            margin: 25px 0 15px 0;
+        }
+
+        .quote {
+            font-style: italic;
+            text-align: center;
+            font-size: 1.3em;
+            color: #555;
+            margin: 40px 0;
+            padding: 30px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            border-left: 5px solid #667eea;
+        }
+
+        .author {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+            color: #764ba2;
+        }
+
+        ul {
+            list-style: none;
+            margin: 20px 0;
+        }
+
+        li {
+            margin: 15px 0;
+            padding-left: 30px;
+            position: relative;
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        li:before {
+            content: "☑";
+            position: absolute;
+            left: 0;
+            color: #667eea;
+            font-size: 1.2em;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            font-weight: bold;
+        }
+
+        tr:hover {
+            background: #f8f9fa;
+        }
+
+        .formula {
+            background: #f0f4ff;
+            padding: 20px;
+            border-radius: 10px;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #667eea;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .note {
+            font-style: italic;
+            color: #666;
+            margin-top: 10px;
+        }
+
+        .controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background: #f8f9fa;
+            border-top: 2px solid #e0e0e0;
+        }
+
+        button {
+            padding: 12px 30px;
+            font-size: 1em;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: bold;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .prev-btn {
+            background: #6c757d;
+            color: white;
+        }
+
+        .next-btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .slide-counter {
+            color: #666;
+            font-weight: bold;
+        }
+
+        .comparison-table td:first-child {
+            background: #fff3e0;
+        }
+
+        .comparison-table td:last-child {
+            background: #e8f5e9;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <!-- Slide 1 -->
+        <div class="slide active">
+            <h1>ENGLISH GRAMMAR (A1_W5)</h1>
+            <div class="quote">
+                "The only way to do great work is to love what you do."
+                <span class="author">— Steve Jobs</span>
+            </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="slide">
+            <h2>PAST CONTINUOUS TENSE</h2>
+            <ul>
+                <li>The past continuous tense (also called the past progressive tense) describes actions that were ongoing at a specific moment in the past or were interrupted by another action.</li>
+                <li>It is formed using the past tense of the verb "to be" (was/were) + present participle (verb + -ing).</li>
+            </ul>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="slide">
+            <h2>Formation of the Past Continuous Tense</h2>
+            <h3>Affirmative Sentences</h3>
+            <div class="formula">Subject + was/were + verb-ing</div>
+            <table>
+                <tr>
+                    <th>Pronoun</th>
+                    <th>Was/Were + verb-ing</th>
+                </tr>
+                <tr><td>I</td><td>was reading</td></tr>
+                <tr><td>You</td><td>were reading</td></tr>
+                <tr><td>He/She/It</td><td>was reading</td></tr>
+                <tr><td>We</td><td>were reading</td></tr>
+                <tr><td>You</td><td>were reading</td></tr>
+                <tr><td>They</td><td>were reading</td></tr>
+            </table>
+            <p class="note">Verb => read</p>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="slide">
+            <h2>PAST CONTINUOUS TENSE</h2>
+            <h3>Examples</h3>
+            <ul>
+                <li>I was writing a book yesterday.</li>
+                <li>She was talking on the phone when I arrived.</li>
+                <li>They were watching a movie all night.</li>
+            </ul>
+        </div>
+
+        <!-- Slide 5 -->
+        <div class="slide">
+            <h2>Formation of the Past Continuous Tense</h2>
+            <h3>Negative Sentences</h3>
+            <div class="formula">Subject + was/were + not + verb-ing</div>
+            <table>
+                <tr>
+                    <th>Pronoun</th>
+                    <th>Was/Were + not + verb-ing</th>
+                </tr>
+                <tr><td>I</td><td>was not taking</td></tr>
+                <tr><td>You</td><td>were not taking</td></tr>
+                <tr><td>He/She/It</td><td>was not taking</td></tr>
+                <tr><td>We</td><td>were not taking</td></tr>
+                <tr><td>You</td><td>were not taking</td></tr>
+                <tr><td>They</td><td>were not taking</td></tr>
+            </table>
+            <p class="note">Verb => take</p>
+        </div>
+
+        <!-- Slide 6 -->
+        <div class="slide">
+            <h2>PAST CONTINUOUS TENSE</h2>
+            <h3>Examples</h3>
+            <ul>
+                <li>I was not watching the television.</li>
+                <li>She was not listening to music.</li>
+                <li>We were not going to the party.</li>
+            </ul>
+        </div>
+
+        <!-- Slide 7 -->
+        <div class="slide">
+            <h2>Formation of the Past Continuous Tense</h2>
+            <h3>Interrogative Sentences (Questions)</h3>
+            <div class="formula">Was/Were + Subject + verb-ing?</div>
+            <table>
+                <tr>
+                    <th>Pronoun</th>
+                    <th>Question Form (Verb => cook)</th>
+                </tr>
+                <tr><td>I</td><td>Was I cooking...?</td></tr>
+                <tr><td>You</td><td>Were you cooking...?</td></tr>
+                <tr><td>He/She/It</td><td>Was he/she cooking...?</td></tr>
+                <tr><td>We</td><td>Were we cooking...?</td></tr>
+                <tr><td>You</td><td>Were you cooking...?</td></tr>
+                <tr><td>They</td><td>Were they cooking...?</td></tr>
+            </table>
+        </div>
+
+        <!-- Slide 8 -->
+        <div class="slide">
+            <h2>PAST CONTINUOUS TENSE</h2>
+            <h3>Examples</h3>
+            <ul>
+                <li>Was he playing football?</li>
+                <li>Were you reading a book?</li>
+                <li>Was I disturbing you?</li>
+                <li>Was she sleeping?</li>
+                <li>Were they coming?</li>
+            </ul>
+        </div>
+
+        <!-- Slide 9 -->
+        <div class="slide">
+            <h2>PAST CONTINUOUS TENSE</h2>
+            <h3>Actions at a Specific Time</h3>
+            <ul>
+                <li>Used to describe actions that were in progress at a precise time in the past.</li>
+            </ul>
+            <h3>Examples</h3>
+            <ul>
+                <li>She was writing an email at 8 PM last night.</li>
+                <li>They were talking on the phone at noon.</li>
+                <li>We were talking to each other during lunch.</li>
+            </ul>
+        </div>
+
+        <!-- Slide 10 -->
+        <div class="slide">
+            <h2>PAST CONTINUOUS TENSE</h2>
+            <h3>Interrupted Actions</h3>
+            <ul>
+                <li>Used for actions that were happening when another action (usually Past Simple) interrupted them.</li>
+            </ul>
+            <h3>Examples</h3>
+            <ul>
+                <li>I was staying with my friend when you called.</li>
+                <li>She was working as a cashier when the store closed.</li>
+            </ul>
+        </div>
+
+        <!-- Slide 11 -->
+        <div class="slide">
+            <h2>PAST CONTINUOUS TENSE</h2>
+            <h3>Parallel Actions (Two things at once)</h3>
+            <ul>
+                <li>Used when two or more actions were happening at the same time in the past.</li>
+            </ul>
+            <h3>Examples</h3>
+            <ul>
+                <li>We were travelling to Paris while it was raining.</li>
+                <li>He was meeting his boss while I was working.</li>
+            </ul>
+        </div>
+
+        <!-- Slide 12 -->
+        <div class="slide">
+            <h2>PAST CONTINUOUS TENSE</h2>
+            <h3>Atmosphere & Background</h3>
+            <ul>
+                <li>Used to describe the atmosphere or introduction in a story.</li>
+            </ul>
+            <h3>Examples</h3>
+            <ul>
+                <li>The birds were singing and the sun was shining.</li>
+                <li>The wind was blowing hard that night.</li>
+            </ul>
+        </div>
+
+        <!-- Slide 13 -->
+        <div class="slide">
+            <h2>PAST CONTINUOUS TENSE</h2>
+            <h3>Spelling Rules for Present Participle (-ing)</h3>
+            <table>
+                <tr>
+                    <th>Base Verb</th>
+                    <th>Rule</th>
+                    <th>Example</th>
+                </tr>
+                <tr>
+                    <td>Most verbs</td>
+                    <td>Add -ing</td>
+                    <td>work → working</td>
+                </tr>
+                <tr>
+                    <td>Verbs ending in -e</td>
+                    <td>Drop 'e', add -ing</td>
+                    <td>write → writing</td>
+                </tr>
+                <tr>
+                    <td>One vowel + one consonant</td>
+                    <td>Double consonant</td>
+                    <td>run → running</td>
+                </tr>
+                <tr>
+                    <td>Verbs ending in -ie</td>
+                    <td>Change 'ie' to 'y', add -ing</td>
+                    <td>die → dying</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Slide 14 -->
+        <div class="slide">
+            <h2>PAST CONTINUOUS TENSE</h2>
+            <h3>Time Expressions</h3>
+            <ul>
+                <li>While, when, as</li>
+                <li>All day, all morning, the whole night</li>
+                <li>At [time] yesterday (e.g., At 5 PM yesterday)</li>
+            </ul>
+            <h3>Examples</h3>
+            <ul>
+                <li>She was watching TV all evening.</li>
+                <li>They were working hard when the boss arrived.</li>
+                <li>We were going to the concert when the car broke down.</li>
+            </ul>
+        </div>
+
+        <!-- Slide 15 -->
+        <div class="slide">
+            <h2>PAST CONTINUOUS TENSE</h2>
+            <h3>Comparing Past Continuous & Past Simple</h3>
+            <table class="comparison-table">
+                <tr>
+                    <th>Past Continuous</th>
+                    <th>Past Simple</th>
+                </tr>
+                <tr>
+                    <td><strong>Action in progress</strong></td>
+                    <td><strong>Completed action</strong></td>
+                </tr>
+                <tr>
+                    <td>'She was reading when I entered.'</td>
+                    <td>'She read the book yesterday.'</td>
+                </tr>
+                <tr>
+                    <td><strong>Background action/Scene</strong></td>
+                    <td><strong>Main event/Interruption</strong></td>
+                </tr>
+                <tr>
+                    <td>'The sun was shining...'</td>
+                    <td>'...suddenly, it started to rain.'</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Slide 16 - Bonus Past Simple Comparison -->
+        <div class="slide">
+            <h2>PAST SIMPLE TENSE</h2>
+            <h3>Comparing Past Simple & Past Continuous</h3>
+            <table class="comparison-table">
+                <tr>
+                    <th>Past Simple</th>
+                    <th>Past Continuous</th>
+                </tr>
+                <tr>
+                    <td><strong>Completed Action</strong></td>
+                    <td><strong>Action in Progress</strong></td>
+                </tr>
+                <tr>
+                    <td>Describes an action that started and finished at a specific time in the past.</td>
+                    <td>Describes an action that was happening at a specific moment in the past.</td>
+                </tr>
+                <tr>
+                    <td><em>'I watched a movie yesterday.'</em></td>
+                    <td><em>'I was watching a movie when you called.'</em></td>
+                </tr>
+                <tr>
+                    <td><strong>Sequence of Events</strong></td>
+                    <td><strong>Simultaneous Events</strong></td>
+                </tr>
+                <tr>
+                    <td><em>'He came in, took off his coat, and sat down.'</em></td>
+                    <td><em>'He was cooking while she was reading.'</em></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="controls">
+            <button class="prev-btn" onclick="changeSlide(-1)">← Previous</button>
+            <span class="slide-counter"><span id="current">1</span> / <span id="total">16</span></span>
+            <button class="next-btn" onclick="changeSlide(1)">Next →</button>
+        </div>
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const totalSlides = slides.length;
+        document.getElementById('total').textContent = totalSlides;
+
+        function showSlide(n) {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (n + totalSlides) % totalSlides;
+            slides[currentSlide].classList.add('active');
+            document.getElementById('current').textContent = currentSlide + 1;
+        }
+
+        function changeSlide(direction) {
+            showSlide(currentSlide + direction);
+        }
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft') changeSlide(-1);
+            if (e.key === 'ArrowRight') changeSlide(1);
+        });
+    </script>
+</body>
+</html>
